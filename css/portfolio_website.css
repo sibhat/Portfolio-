@@ -1,0 +1,170 @@
+*{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: normal;
+	}
+
+img{
+		width: 100%;
+	}
+nav{
+	position: absolute;
+	top: 20px;
+	left: 23px;
+	width: 100%;
+}
+a {
+	min-width: 48px;
+	min-height: 48px;
+	text-decoration: none;
+	color: white;
+}
+h1, main h1{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	margin: 0;
+}
+section:nth-of-type(1) h1{
+	position: absolute;
+	top: 150px;
+	left: 40px;
+	color: white;
+}
+section:nth-of-type(1) h5{
+	position: absolute;
+	top: 175px;
+	left: 40px;
+	text-transform: uppercase;
+	color: white;
+}
+aside {
+	background-color: #93C0C1; 
+	margin: 10px auto;
+	margin-left: 0;
+	padding-top: 5px;
+}
+section:nth-of-type(2) h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 3.5em;
+}
+p{
+	margin: 0; 
+}
+main h1{
+	font-size: 2em;
+}
+p a{
+	text-align: center;
+	font-size: 2em;
+	color: black;
+}
+
+.flexWrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+footer p{
+	position: relative;
+	bottom: 90px;
+	left: 200px;
+}
+footer img{
+	position: relative;
+	bottom: -30px;
+}
+.logo {
+	width: 10%;
+	max-width: 57px;
+	position: absolute;
+	top: -14px;
+	right: 43px;
+}
+@media screen and (max-width: 699px) {
+	a{
+		font-size: 3.5vw;
+		margin: 10px;
+	}
+	section:nth-of-type(1) h1{
+		font-size: 3.5vw;
+	}
+	section:nth-of-type(1) h5{
+		font-size: 2.5vw;
+	}
+	/*for mobile size, have the bio after the landing page*/
+	aside{
+		display: flex;
+		flex-wrap: wrap;
+		order: 1;
+		width: 100%;
+	}
+	/*bio pic*/
+	span{
+		width: 25%;
+		order: 1;
+	}
+	aside p{
+		width: 74%;
+		order: 2;
+	}
+	main{
+		width: 100%;
+		order: 2;
+	}
+	footer p{
+		font-size: 2.5vw;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	a{
+		font-size: 2.5vw;
+		margin: 10px;
+	}
+	/*landing page name*/
+	section:nth-of-type(1) h1{
+		font-size: 3.5vw;
+	}
+	section:nth-of-type(1) h5{
+		font-size: 2.5vw;
+	}
+	section:nth-of-type(2) h1{
+		font-size: 1.7em;
+	}
+	/* for tablet and desktop, have aside on a side*/
+	aside{
+		width: 25%;
+		order: 1;
+		max-height: 600px;
+		margin-top: 0;
+	}
+	main{
+		width: 74%;
+		order: 2;
+	}
+	/* privous projects*/
+	section:nth-of-type(3) {
+		display: inline-block;
+	}
+	article{
+		width: 31%;
+		float: right;
+		margin: 5px;
+	}
+	p a{
+		font-size: 1.5em;
+		text-align: center;
+	}
+	footer p{
+		font-size: 2vw;
+		bottom: 150px;
+		left: 300px;
+	}
+}
+
+@media screen and (min-width: 1001px) {
+	footer p{
+		font-size: 2vw;
+		bottom: 170px;
+		left: 450px;
+	}
+}
